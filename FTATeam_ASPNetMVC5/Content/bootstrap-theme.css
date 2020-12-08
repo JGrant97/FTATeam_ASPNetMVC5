@@ -1,0 +1,102 @@
+﻿.container {
+    margin-top: 2%;
+}
+
+.field-validation-error
+{
+    color: red;
+}
+.col-sm-4 {
+    padding-bottom: 15px;
+    padding-left: 7.5px !important;
+    padding-right: 7.5px !important;
+}
+
+.card-img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.focused-box {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.focused-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    width: auto;
+    display: block;
+    max-height:40vw;
+}
+
+.item-group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.date{
+    text-align: center;
+    color: #fff;
+}
+
+.dropdown-item:active {
+    background-color: #e6e6e6 !important;
+}
+
+.gallery {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+
+}
+
+.overlay {
+    display: inline-block;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    background-color: rgba(240,240,240,0.5);
+}
+
+.navbar{
+    background-color: #222 !important;
+}
+.btn-secondary {
+    background-color: #222 !important;
+    border-color: #222 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #555555 !important;
+    border-color: #555555 !important;
+}
+
+.btn-secondary:active {
+    background-color: #555555 !important;
+    border-color: #555555 !important;
+}

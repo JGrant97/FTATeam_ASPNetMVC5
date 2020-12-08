@@ -1,0 +1,29 @@
+﻿@model  IEnumerable<FTATeam_ASPNetMVC5.Models.TeamImage>
+@{
+    ViewBag.Title = "Images";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Images</h2>
+
+    <div class="card-group">
+        <div class="row">
+        </div>
+    </div>
+
+    <div class="focused-box">
+        <img class="focused-img" src="" alt="" />
+        <div class="item-group">
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts
+{
+
+    @Scripts.Render("~/Scripts/getImages.js");
+
+}

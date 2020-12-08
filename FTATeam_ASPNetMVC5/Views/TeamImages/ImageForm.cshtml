@@ -1,0 +1,29 @@
+﻿@model FTATeam_ASPNetMVC5.ViewModels.TeamImagesViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Upload Image</h2>
+
+    @using (Html.BeginForm("Upload", "TeamImages", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true, "Please fix the following errors.")
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.File)
+            @Html.TextBoxFor(m => m.File, new { type = "file", @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.File)
+        </div>
+        @Html.HiddenFor(m => m.TeamImage.Id)
+        @Html.AntiForgeryToken()
+        <button class="btn btn-secondary" type="submit">Upload</button>
+    }
+</div>
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

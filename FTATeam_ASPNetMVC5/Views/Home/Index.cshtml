@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .container {
+        width: 100% !important;
+    }
+</style>
+@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-secondary btn-lg">Learn more &raquo;</a></p>
+    </div>*@
+
+<div class="gallery">
+    <img class="gallery-img" src="~/Content/Images/bg.jpg" alt="" />
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Follow us on Facebook!</h2>
+            <p>
+                Stay up to date on our latest shenanigans and see what we’re doing and where we’re playing.
+            </p>
+            <p><a class="btn btn-secondary" href="https://www.facebook.com/ft.ares">Follow &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Want to start airsoft?</h2>
+            <p>Check out UK-Tactical specifically their warrior assault systems line of gear. 
+            It may be expensive, however, as a team we highly suggest them for their high quality construction and durability.</p>
+            <p><a class="btn btn-secondary" href="https://www.uktactical.com/">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Contact us</h2>
+            <p>E-mail Jack aka Nomad by clicking to button bellow for any queries regarding this web application or Fireteam Ares.</p>
+            <p><a class="btn btn-secondary" href="mailto:jackgrant97@live.co.uk">Contact &raquo;</a></p>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            var galleryImg = $(".gallery").find("img").first();
+            var images = [
+                "/Content/Images/bg.jpg",
+                "/Content/Images/62211141_2080919685539731_5737927800371806208_o.png",
+                "/Content/Images/62245860_2080913882206978_7751283347749339136_o.jpg",
+                "/Content/Images/88302200_2282081625423535_4053892761655443456_o.jpg",
+                "/Content/Images/53609150_2030951547203212_7781444467822690304_o.jpg",
+                "/Content/Images/53556659_2030940370537663_3916187717779587072_o.jpg"
+
+            ];
+
+            var i = 0;
+            setInterval(function () {
+                i = (i + 1) % images.length;
+                galleryImg.fadeOut(function () {
+                    $(this).attr("src", images[i]);
+                    $(this).fadeIn(1000);
+                });
+            }, 6000);
+        });
+    </script>
+} 
