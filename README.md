@@ -1,0 +1,2 @@
+# FTATeam_ASPNetMVC5
+This application was created using ASP.NET MVC5 and utilises entity framework in a code first format to execute queries to a database. The database stores both users and images and allows administrator accounts to execute CRUD queries without having to directly access the database.             Additionally, some queries are executed using jQuery and Ajax via a RESTful web API. Other languages used during the creation of the web application include HTML, CSS, and JavaScript
